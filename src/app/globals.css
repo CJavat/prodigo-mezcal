@@ -1,1 +1,25 @@
 @import "tailwindcss";
+
+@theme {
+  --color-prodigo-50: #f1e7bf;
+  --color-prodigo-100: #f1df3d;
+  --color-prodigo-200: #e4c42f;
+  --color-prodigo-300: #d9bf1f;
+  --color-prodigo-400: #cfb867;
+  --color-prodigo-500: #c29b17;
+  --color-prodigo-600: #896d17;
+  --color-prodigo-700: #6c5418;
+}
+
+@layer base {
+  :root {
+    --color-prodigo-50: #f1e7bf;
+    --color-prodigo-100: #f1df3d;
+    --color-prodigo-200: #e4c42f;
+    --color-prodigo-300: #d9bf1f;
+    --color-prodigo-400: #cfb867;
+    --color-prodigo-500: #c29b17;
+    --color-prodigo-600: #896d17;
+    --color-prodigo-700: #6c5418;
+  }
+}
