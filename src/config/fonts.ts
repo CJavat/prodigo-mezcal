@@ -16,7 +16,7 @@ export const kontiki = localFont({
 });
 
 export const lemonMilk = localFont({
-  src: "../../public/fonts/lemon-milk/lemon-milk-regular.otf",
+  src: "../../public/fonts/lemon-milk/lemon-milk-ultra-light.otf",
   display: "swap",
   variable: "--font-kontiki",
 });
