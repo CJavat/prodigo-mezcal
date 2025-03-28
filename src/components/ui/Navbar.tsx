@@ -14,8 +14,8 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="px-2 overflow-hidden">
-      <div className="flex lg:hidden justify-center items-center">
+    <nav className="px-2 overflow-hidden flex-1">
+      <div className="flex lg:hidden justify-center items-center justify-self-end">
         <button
           onClick={toggleButton}
           id="mobile-menu-button"
@@ -37,14 +37,14 @@ const Navbar = () => {
 
       <div
         id="navigation-menu"
-        className={`flex items-center lg:space-x-10 absolute lg:relative ${
+        className={`flex items-center justify-between absolute lg:space-x-10 lg:relative ${
           showMobileMenu
             ? "bg-white absolute left-0 top-16 w-full flex flex-col items-start"
             : ""
         }`}
       >
         <ul
-          className={`w-full lg:flex lg:space-x-5 opacity-0 lg:opacity-100 ${
+          className={`w-full lg:flex lg:justify-center lg:items-center lg:space-x-5 opacity-0 lg:opacity-100 ${
             showMobileMenu
               ? "flex flex-col transition ease-linear opacity-100"
               : ""
@@ -118,7 +118,7 @@ const Navbar = () => {
         >
           <a
             href="#"
-            className="bg-[#2a642a] hover:bg-[#1e4820] text-white px-3 py-1 lg:px-5 rounded-full cursor-pointer"
+            className="bg-[#2a642a] hover:bg-[#1e4820] text-white px-3 py-1 lg:px-5 rounded-full cursor-pointer text-sm"
           >
             Contacto
           </a>
