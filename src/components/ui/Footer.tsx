@@ -1,4 +1,5 @@
 import { kontiki } from "@/config/fonts";
+import Link from "next/link";
 import React from "react";
 
 export const Footer = () => {
@@ -6,11 +7,11 @@ export const Footer = () => {
     <footer className="mx-auto max-w-[1220px] px-6 pt-20 lg:pt-32 code-section">
       <div className="flex flex-col gap-10 pb-10 md:pb-14 lg:flex-row xl:gap-20">
         <div className="lg:max-w-[280px]">
-          <a className="block" href="/">
+          <Link className="block" href="/">
             <div className={`text-3xl font-bold`}>
               <span className={`${kontiki.className}`}>Pródigo</span> Mezcal
             </div>
-          </a>
+          </Link>
           <p className="pt-7 text-md leading-5 text-lack lg:text-md">
             Somos una empresa que se dedica a vender el mejor Mezcal de todo
             Mexico, cada botella de mezcal es una reflexión de la rica tradición
@@ -23,27 +24,27 @@ export const Footer = () => {
           </h3>
           <div className="space-y-2 text-lg text-gray-500 lg:space-y-4 lg:text-md">
             <div>
-              <a href="/">Inicio</a>
+              <Link href="/">Inicio</Link>
             </div>
             <div>
-              <a href="/historia">Historia</a>
+              <Link href="/historia">Historia</Link>
             </div>
             <div>
-              <a href="/productos" className="">
+              <Link href="/productos" className="">
                 Productos
-              </a>
+              </Link>
             </div>
             <div>
-              <a href="/blog">Blog</a>
+              <Link href="/blog">Blog</Link>
             </div>
             <div>
-              <a href="/eventos">Eventos</a>
+              <Link href="/eventos">Eventos</Link>
             </div>
             <div>
-              <a href="/contacto">Contacto</a>
+              <Link href="/contacto">Contacto</Link>
             </div>
             <div>
-              <a href="/tiendita">Tiendita</a>
+              <Link href="/tiendita">Tiendita</Link>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import "@fortawesome/fontawesome-free/css/all.min.css"; // Importar estilos de Font Awesome
-import { kontiki, lemonMilk } from "@/config/fonts";
+import { kontiki } from "@/config/fonts";
 
 export default function Home() {
   const customersFeedback = [
@@ -148,18 +148,22 @@ export default function Home() {
             <div className="relative col-span-3 ml-8 grid grid-cols-3 gap-4 pb-10 md:ml-0 md:grid-cols-2 lg:gap-8 xl:col-span-1">
               {/* //TODO: Hacer un Slider en esas imágenes */}
               <div className="relative z-30 col-span-2 h-60 w-full overflow-hidden rounded-xl border-4 border-white shadow-[0_0_25px_0_rgba(0,0,0,0.1)] md:col-span-1 md:h-96 lg:h-[460px]">
-                <img
+                <Image
                   className="h-full w-full object-cover dont-replace"
                   src="https://images.unsplash.com/photo-1719876969058-5482a133678a?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3w0MzEzMzd8MHwxfHNlYXJjaHwyfHxNZXhpY2FuJTIwU3Bpcml0c3xlbnwwfDB8fHwxNzQyNzc3Nzc5fDA&amp;ixlib=rb-4.0.3&amp;q=80&amp;w=1920"
                   alt=""
+                  width={1000}
+                  height={1000}
                 />
               </div>
 
               <div className="relative z-10 h-60 w-full overflow-hidden rounded-xl rounded-r-none border-4 border-white md:h-96 md:rounded-r-xl lg:h-[460px]">
-                <img
+                <Image
                   className="h-full w-full object-cover"
                   src="https://imagedelivery.net/xaKlCos5cTg_1RWzIu_h-A/2233815b-1d87-4c57-0fe6-156886ab2700/public"
                   alt=""
+                  width={1000}
+                  height={1000}
                 />
               </div>
             </div>
@@ -306,7 +310,7 @@ export default function Home() {
         <div className="grid gap-6 md:grid-cols-3">
           {itemsCard.map((item) => (
             <div key={item.src} className="rounded-xl bg-gray-100 p-4">
-              <img
+              <Image
                 className="h-40 w-full rounded-xl object-cover lg:h-52"
                 src={item.src}
                 alt={item.alt}
