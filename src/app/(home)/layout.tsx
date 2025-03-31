@@ -1,6 +1,8 @@
+import { Header } from "../../components/ui/Header";
+import { Footer } from "@/components";
+
 import { lemonMilk } from "@/config/fonts";
 import "../globals.css";
-import { Header } from "../../components/ui/Header";
 
 export default function RootLayout({
   children,
@@ -13,6 +15,8 @@ export default function RootLayout({
         <Header />
 
         {children}
+
+        <Footer />
       </body>
     </html>
   );
